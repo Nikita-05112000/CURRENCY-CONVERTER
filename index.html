@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+<div class="stars" id="stars"></div>
+
+<div class="container">
+  <h2>Convert Your Currency</h2>
+  <form>
+    <div class="amount">
+      <p>Enter Amount</p>
+      <input type="text" value="1"/>
+    </div>
+    <div class="drop">
+      <div class="from">
+        <p>From</p>
+        <div class="select-container">
+          <img src="https://flagsapi.com/US/flat/64.png" alt="US Flag">
+
+          <select name="from"></select>
+        </div>
+      </div>
+
+      <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+      <div class="to">
+        <p>To</p>
+
+        <div class="select-container">
+          <img src="https://flagsapi.com/IN/flat/64.png" alt="India Flag">
+
+          <select name="to"></select>
+        </div>
+      </div>
+
+    </div>
+    <div class="msg">
+      1USD = 96.33547298 INR
+    </div>
+
+    <button type="submit" >
+      Get Exchange Rate
+    </button>
+
+  </form>
+<div class="info"></div>
+
+</div>
+
+
+<script src="./data.js"></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
+
+ 
