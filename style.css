@@ -29,7 +29,7 @@ body::before{
   z-index:-2;
 }
 
-/* STARS */
+
 
 .stars{
   position:fixed;
@@ -61,7 +61,7 @@ body::before{
   }
 }
 
-/* CONTAINER */
+
 
 .container{
   width:580px;
