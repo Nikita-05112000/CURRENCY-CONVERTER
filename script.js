@@ -103,16 +103,15 @@
 
     </div>`
 };
-  
-    const updateFlag = (ele) =>{
-      let currencyCode = ele.value;
-      let countryCode = countryList[currencyCode];
+const updateFlag = (ele) =>{
+    let currencyCode = ele.value;
+    let countryCode = countryList[currencyCode];
 
-      let newSrc = `https://flagsapi.com/${countryCode}/flat/64.png`;
+    let newSrc = `https://flagsapi.com/${countryCode}/flat/64.png`;
 
-      let img = ele.parentElement.querySelector("img");
-      img.src = newSrc;
-    };
+    let img = ele.parentElement.querySelector("img");
+    img.src = newSrc;
+ };
 
     btn.addEventListener("click", (evt) => {
       evt.preventDefault();
@@ -122,6 +121,8 @@
     window.addEventListener("load", () =>{
       updateExchangeRate();
     })
-
+setInterval(() => {
+  updateExchangeRate();
+}, 60000);
 
     
